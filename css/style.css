@@ -1,0 +1,288 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+
+  background-color: #f4f4f4;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.benefits__wrap {
+  margin-top: 25px;
+  background-color: #76cdd8;
+}
+
+.benefits__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__content,
+.item__content-image {
+  width: 50%;
+  padding: 35px 60px 45px;
+}
+
+.bg-content {
+  background-color: #fff;
+}
+
+.bg-content:hover .benefits__item-text {
+  color: #76cdd8;
+}
+
+.bg-content:hover::before {
+  content: "";
+  width: 0;
+  height: 0;
+  float: right;
+  margin: -35px -61px;
+  border-top: 75px solid #76cdd8;
+  border-left: 75px solid transparent;
+}
+
+.benefits__title {
+  color: #fff;
+  font-size: 52px;
+  padding: 75px 200px;
+}
+
+.item__title {
+  color: #76cdd8;
+}
+
+.benefits__item-text {
+  font-style: italic;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #019999;
+  border: none;
+  padding: 20px 30px;
+  margin-left: 250px;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: rgb(118, 205, 216);
+}
+
+.item__content-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+
+.item__text-img {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.item__img {
+  width: 50%;
+}
+
+.item__img:hover,
+.about__img:hover,
+.plan__img:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.benefits__text-span {
+  color: #027bff;
+}
+
+.about__wrap {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.about__description {
+  padding: 55px 60px;
+}
+
+.about__title {
+  color: #76cdd8;
+  font-size: 30px;
+}
+
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #666;
+}
+
+.about__btn {
+  margin-left: 400px;
+}
+
+.about__img,
+.plan__img {
+  width: 35%;
+}
+
+.plan__wrap {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.plan__item {
+  margin: 20px 15px;
+  border: 1px solid #019999;
+}
+
+.plan__item:hover {
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+
+.item__top {
+  background-color: #019999;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 40px;
+}
+
+.item__top-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.plan__item-text {
+  font-size: 20px;
+  color: #666;
+  padding: 0 35px;
+}
+
+.plan__item-btn {
+  margin: 15px 90px;
+}
+
+.plan__item-text-spec {
+  visibility: hidden;
+  margin-left: 85px;
+  color: #24d4d4;
+}
+
+.text-spec-span {
+  color: red;
+}
+
+.plan__item:nth-child(3):hover .plan__item-text-spec {
+  transition: 1s;
+  transform: scale(1.1);
+
+  visibility: visible;
+}
+
+.contacts__wrap {
+  margin-top: 35px;
+  position: relative;
+}
+
+.contacts__title {
+  background-color: #23d4d4;
+  color: #fff;
+  font-size: 30px;
+  padding: 30px 90px 80px;
+  margin-bottom: 310px;
+}
+
+.contacts__form {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+
+  position: absolute;
+  left: 105px;
+  top: 90px;
+  z-index: 2;
+}
+
+.contacts__input {
+  width: 256px;
+  height: 44px;
+  border: 1px solid #d9d9de;
+  padding: 11px 14px 12px;
+  margin: 0 5px 10px 135px;
+}
+
+.contacts__area {
+  width: 35%;
+  padding: 14px;
+  height: 165px;
+  border: 1px solid #d9d9de;
+  margin: 0 60px 60px 0;
+}
+
+.contacts__input::placeholder,
+.contacts__area::placeholder {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+.contacts__input:focus,
+.contacts__area:focus {
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+  outline: none;
+}
+
+.contacts__btn {
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+
+.contacts__info {
+  background-color: #019999;
+  color: #fff;
+  padding: 50px 250px 30px;
+  column-count: 2;
+  column-gap: 45px;
+}
+
+.contacts__info-title {
+  font-size: 22px;
+  margin-left: 60px;
+}
+
+.contacts__info-text {
+  font-size: 16px;
+  font-weight: 300;
+  white-space: pre;
+}
+
+.footer__copy {
+  text-align: center;
+}
